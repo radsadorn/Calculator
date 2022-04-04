@@ -1,0 +1,42 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="calculator">
+    @* <div class="top-container">
+      <div class="clock">
+        <span class="hour"></span><span class="minute"></span>
+      </div>
+      <div class="status">
+        <img src="status.png" alt="Status">
+      </div>
+    </div> *@
+    <div class="value" id="value">0</div>
+    <div class="buttons-container">
+      <div class="button function ac" onclick="MakeReq('https://localhost:5001/Home/ButtonAC', 'value'); return false;">AC</div>
+      <div class="button function pm" onclick="MakeReq('https://localhost:5001/Home/ButtonPM', 'value'); return false;">±</div>
+      <div class="button function percent" onclick="MakeReq('https://localhost:5001/Home/ButtonPercent', 'value'); return false;">%</div>
+      <div class="button operator division" onclick="MakeReq('https://localhost:5001/Home/ButtonDiv', 'value'); return false;">÷</div>
+      <div class="button number-7" onclick="MakeReq('https://localhost:5001/Home/Button7', 'value'); return false;">7</div>
+      <div class="button number-8" onclick="MakeReq('https://localhost:5001/Home/Button8', 'value'); return false;">8</div>
+      <div class="button number-9" onclick="MakeReq('https://localhost:5001/Home/Button9', 'value'); return false;">9</div>
+      <div class="button operator multiplication" onclick="MakeReq('https://localhost:5001/Home/ButtonMul', 'value'); return false;">×</div>
+      <div class="button number-4" onclick="MakeReq('https://localhost:5001/Home/Button4', 'value'); return false;">4</div>
+      <div class="button number-5" onclick="MakeReq('https://localhost:5001/Home/Button5', 'value'); return false;">5</div>
+      <div class="button number-6" onclick="MakeReq('https://localhost:5001/Home/Button6', 'value'); return false;">6</div>
+      <div class="button operator subtraction" onclick="MakeReq('https://localhost:5001/Home/ButtonSub', 'value'); return false;">−</div>
+      <div class="button number-1" onclick="MakeReq('https://localhost:5001/Home/Button1', 'value'); return false;">1</div>
+      <div class="button number-2" onclick="MakeReq('https://localhost:5001/Home/Button2', 'value'); return false;">2</div>
+      <div class="button number-3" onclick="MakeReq('https://localhost:5001/Home/Button3', 'value'); return false;">3</div>
+      <div class="button operator addition" onclick="MakeReq('https://localhost:5001/Home/ButtonAdd', 'value'); return false;">+</div>
+      <div class="button number-0" onclick="MakeReq('https://localhost:5001/Home/Button0', 'value'); return false;">0</div>
+      <div class="button decimal" onclick="MakeReq('https://localhost:5001/Home/ButtonDec', 'value'); return false;">.</div>
+      <div class="button operator equal" onclick="MakeReq('https://localhost:5001/Home/ButtonEqual', 'value'); return false;">=</div>
+    </div>
+    @* <div class="bottom"></div> *@
+</div>
+
+@* <div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div> *@
